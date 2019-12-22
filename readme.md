@@ -19,6 +19,7 @@ Projeto fórum é um teste de um processo seletivo
 - `cd forum`
 - `cp .env.example .env`
 - `composer install`
+- `npm install`
 - `php artisan key:generate`
 - Edite o arquivo que esta na raiz do projeto `.env` e defina os detalhes da sua conexão de banco de dados
 - `php artisan migrate`
