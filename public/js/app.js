@@ -2072,9 +2072,11 @@ __webpack_require__.r(__webpack_exports__);
       Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_0__["login"])(payload).then(function (res) {
         _this.$store.commit("loginSuccess", res);
 
-        _this.$router.push({
+        console.log(_this.$router);
+
+        _this.$router.go(_this.$router.push({
           path: '/'
-        });
+        }));
       })["catch"](function (error) {
         _this.error = "E-mail ou senha inválidos";
         _this.snackbar = true;
@@ -2568,9 +2570,9 @@ __webpack_require__.r(__webpack_exports__);
       Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_0__["register"])(payload).then(function (res) {
         _this2.$store.commit("loginSuccess", res);
 
-        _this2.$router.push({
-          name: 'home'
-        });
+        _this2.$router.go(_this2.$router.push({
+          path: '/'
+        }));
       })["catch"](function (error) {
         var errors = Object.values(error);
         errors = errors.flat();

@@ -95,7 +95,7 @@
                 register(payload)
                     .then((res) => {
                         this.$store.commit("loginSuccess", res);
-                        this.$router.push({ name: 'home' });
+                        this.$router.go(this.$router.push({path: '/'}));
                     })
                     .catch((error) => {
                         let errors = Object.values(error);

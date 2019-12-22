@@ -77,9 +77,8 @@
                 login(payload)
                     .then((res) => {
                         this.$store.commit("loginSuccess", res);
-                        this.$router.push({
-                            path: '/'
-                        });
+                        console.log(this.$router)
+                        this.$router.go(this.$router.push({path: '/'}));
                     })
                     .catch((error) => {
                         this.error = "E-mail ou senha inválidos"
