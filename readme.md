@@ -22,7 +22,7 @@ Projeto fórum é um teste de um processo seletivo
 - `npm install`
 - `php artisan key:generate`
 - Edite o arquivo que esta na raiz do projeto `.env` e defina os detalhes da sua conexão de banco de dados
-- `php artisan migrate`
+- `php artisan migrate --seed`
 - `php artisan jwt:secret`
 - `npm run dev`
 - `php artisan serve`
